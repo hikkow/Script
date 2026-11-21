@@ -7,8 +7,8 @@ import android.widget.TextView
 class MainActivity : Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-        val tv = findViewById<TextView>(R.id.tvText)
-        tv.text = "Holy Script работает!"
+        val tv = TextView(this)
+        tv.text = "Hello World"
+        setContentView(tv)
     }
 }
